@@ -1,0 +1,21 @@
+##########################################
+###### INSTALLING PYTHON AND PIP #########
+##########################################
+
+cd home/
+apt update
+apt install software-properties-common -y
+add-apt-repository ppa:deadsnakes/ppa
+apt update
+apt install python
+apt install python3-pip
+
+##########################################
+###### INSTALLING FLASK VIA venv #########
+##########################################
+apt install python3.12-venv
+source .venv/bin/activate
+python3 -m venv .venv
+source .venv/bin/activate
+ls -a  # to show hidden folder
+pip install flask
